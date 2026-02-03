@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Testimonials - SHIUSH Clinics</title>
+
+  <!-- Fonts & AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .testimonial-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #f0f9ff, #ffffff);
+    }
+
+    .testimonial-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+<section class="testimonial-section" data-aos="fade-up">
+  <h2>What Our Patients Say</h2>
+  <div class="testimonial-grid">
+
+    <!-- Real photo testimonials -->
+    <div class="testimonial-card" data-aos="fade-up">
+      <img src="Shivnath Shukla.jpg" alt="Shivnath Shukla" class="testimonial-photo">
+      <div class="testimonial-name">Shivnath Shukla</div>
+      <div class="testimonial-text">
+        "Dr. Nitish listens patiently and explains everything in a simple way. I feel much better and confident after his treatment."
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="Nikhil Shukla.jpg" alt="Nikhil Shukla" class="testimonial-photo">
+      <div class="testimonial-name">Nikhil Shukla</div>
+      <div class="testimonial-text">
+        "A very genuine doctor who doesn’t rush the consultation. The appointment process is smooth and affordable too."
+      </div>
+    </div>
+
+  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="Muskan jain.jpg" alt="Muskan Jain" class="testimonial-photo">
+      <div class="testimonial-name">Muskan Jain</div>
+      <div class="testimonial-text">
+        "The clinic is neat and organized. I recovered faster than expected. Thank you, SHIUSH Clinics!"
+      </div>
+    </div>
+
+  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="900">
+  <img src="Abhinav Dubey.jpg" alt="Abhinav Dubey" class="testimonial-photo">
+  <div class="testimonial-name">Abhinav Dubey</div>
+  <div class="testimonial-text">
+    "I was suffering from high fever and weakness. Dr. Nitish Shukla diagnosed it early and started effective treatment immediately. Thank you!"
+  </div>
+</div>
+    <!-- Text-only testimonials -->
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="testimonial-name">Anjali Tripathi</div>
+      <div class="testimonial-text">
+        "Professional and kind. The way Dr. Shukla explains each step made me feel calm and reassured."
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="testimonial-name">Kirti</div>
+      <div class="testimonial-text">
+        "Online consultation was smooth and helpful. I got the prescription on WhatsApp right after the session."
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="testimonial-name">Ayush</div>
+      <div class="testimonial-text">
+        "After my accident, I was afraid to go to hospitals. But SHIUSH Clinics treated me with care and respect."
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="testimonial-name">Pratibha</div>
+      <div class="testimonial-text">
+        "Follow-up after treatment was really impressive. Dr. Shukla even checked in to see if I was improving!"
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="700">
+      <div class="testimonial-name">Mariyam</div>
+      <div class="testimonial-text">
+        "Good diagnosis and very economical. I have recommended this clinic to my whole family."
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="800">
+      <div class="testimonial-name">D. Anoj</div>
+      <div class="testimonial-text">
+        "Even on short notice, I was able to get treated. Great support and personal attention."
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 SHIUSH CLINICS. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

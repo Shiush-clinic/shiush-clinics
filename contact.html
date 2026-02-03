@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - SHIUSH Clinics</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .contact-section {
+      background: linear-gradient(135deg, #e6f0ff, #ffffff);
+      padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .contact-card i {
+      color: #007bff;
+      font-size: 2em;
+    }
+
+    .contact-card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .contact-card p {
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <!-- Contact Section -->
+  <section class="contact-section" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>We are here to answer any questions and guide you with the best medical care. Reach out anytime during working hours.</p>
+
+    <div class="contact-cards">
+      <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 8305194236</p>
+      </div>
+
+      <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>shuklanitish762@gmail.com</p>
+      </div>
+
+      <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Address</h3>
+        <p>Link Road Camp 2, Bhilai, Chhattisgarh</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

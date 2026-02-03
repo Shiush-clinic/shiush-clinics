@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Care – Shiush Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #fffaf4; margin: 0; }
+    nav { background-color:#004080; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 20px; text-decoration:none; font-weight:bold; }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 20px #ccc;
+    }
+    img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    h1 { color: #994d00; margin-bottom: 10px; }
+    h2 { color: #cc6600; margin-top: 30px; }
+    ul { padding-left: 20px; }
+    .section { margin-top: 30px; }
+    .highlight {
+      background: #fff3e0;
+      padding: 10px 15px;
+      border-left: 4px solid #ff9933;
+      border-radius: 5px;
+    }
+    .icon-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .icon-row div {
+      flex: 1;
+      min-width: 120px;
+      background: #fff6e6;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px #ccc;
+    }
+    .advice-box {
+      background: #fffbe6;
+      border-left: 5px solid #ffcc00;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .advice-box img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-button a {
+      background:#994d00;
+      color:white;
+      padding:12px 25px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+ <div class="container" data-aos="fade-up">
+    <h1>Diabetes Management at Shiush Clinic</h1>
+    <img src="diabetes.jpg" alt="Diabetes Poster">
+
+    <div class="section">
+      <div class="highlight">
+        <strong>Diabetes</strong> is a long-term condition that affects how your body turns food into energy. It requires continuous care and healthy living.
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-right">
+      <h2>Common Symptoms</h2>
+      <ul>
+        <li>Excessive thirst and frequent urination</li>
+        <li>Unexplained weight loss</li>
+        <li>Fatigue, blurred vision, slow-healing wounds</li>
+        <li>Tingling or numbness in hands/feet</li>
+      </ul>
+    </div>
+
+    <div class="section" data-aos="fade-left">
+      <h2>Diabetes Services We Offer</h2>
+      <ul>
+        <li>Blood Sugar Testing (FBS, PP, HbA1c)</li>
+        <li>Diet & Physical Activity Planning</li>
+        <li>Medication & Insulin Initiation Guidance</li>
+        <li>Diabetic Foot & Eye Screening</li>
+        <li>BP, Lipid, Renal Monitoring</li>
+        <li>Education on Hypoglycemia & Complication Prevention</li>
+      </ul>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Service Availability</h2>
+      <div class="icon-row">
+        <div>✅ Daily OPD</div>
+        <div>🧪 Blood Sugar (FBS, PP)</div>
+        <div>🥗 Diet Counseling</div>
+        <div>🦶 Diabetic Foot Care</div>
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-right">
+      <h2>When to See a Doctor</h2>
+      <ul>
+        <li>Family history of diabetes with weight gain</li>
+        <li>High fasting sugar or HbA1c &gt; 6.5%</li>
+        <li>Symptoms of tiredness or vision changes</li>
+        <li>Foot problems or repeated infections</li>
+      </ul>
+    </div>
+
+    <div class="section" data-aos="fade-left">
+      <h2>What Our Diabetes Patients Say</h2>
+      <div class="highlight">
+        <p><strong>Santosh R.:</strong> "My sugar levels have been stable ever since I started consulting here."</p>
+        <p><strong>Manorama D.:</strong> "Their lifestyle advice and diet planning changed my life."</p>
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Diabetes Education Video</h2>
+      <iframe src="https://www.youtube.com/embed/0nk7aR7RO9Q" title="Understanding Diabetes Care"></iframe>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Healthy Plate Guide</h2>
+      <p>Download our diabetic-friendly meal planning guide (PDF):</p>
+      <a href="diabetic-plate-guide.pdf" download style="color:#994d00; font-weight:bold;">📄 Download Diabetic Plate Guide</a>
+    </div>
+
+    <div class="advice-box" data-aos="fade-up">
+      <img src="my_photo.jpg" alt="Dr. Nitish Shukla">
+      <blockquote>
+        <p><em>"Diabetes can be managed effectively with early care. Visit SHIUSH Clinic for personalized attention."</em></p>
+        <strong>– Dr. Nitish Shukla</strong>
+      </blockquote>
+    </div>
+
+    <div class="cta-button">
+      <a href="appointment.html">Book Your Consultation</a>
+    </div>
+  </div>
+
+  <a href="https://wa.me/918305194236" target="_blank" style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat with us on WhatsApp" style="width:50px; height:50px;">
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

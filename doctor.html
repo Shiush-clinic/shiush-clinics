@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet the Doctor - SHIUSH Clinics</title>
+
+  <!-- Fonts & Animation -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .doctor-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #eef7ff, #ffffff);
+    }
+
+    .doctor-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    .doctor-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .doctor-photo img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .doctor-info {
+      max-width: 600px;
+    }
+
+    .doctor-info h3 {
+      color: #007bff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .doctor-info p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <section class="doctor-section" data-aos="fade-up">
+    <h2>Meet the Founder</h2>
+    <div class="doctor-container">
+      <div class="doctor-photo" data-aos="fade-right">
+        <img src="my_photo.jpg" alt="Dr. Nitish Shukla">
+      </div>
+      <div class="doctor-info" data-aos="fade-left">
+        <h3>Dr. Nitish Shukla, MBBS</h3>
+        <p>
+          Dr. Nitish Shukla, MBBS, is the founder and driving force behind SHIUSH Clinics. With a vision to make quality primary healthcare accessible, affordable, and compassionate, he established the clinic to serve people with dedication and sincerity. His mission goes beyond just treating illness — he believes in patient education, preventive care, and building lasting trust with every individual who walks in.
+        </p>
+        <p>
+          He believes in building strong doctor-patient relationships based on trust, empathy, and education. Whether you're visiting for a regular checkup, chronic disease management, or general health advice, Dr. Shukla ensures that you are heard, understood, and treated with the highest standards of medical ethics and care.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="doctor-profile" style="padding: 40px; background-color: #eef7ff; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center; color: #1a73e8;">Meet the Doctors</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 30px;">
+
+    <!-- Dr. Nitish Shukla -->
+    <div style="max-width: 450px; text-align: center;" data-aos="fade-up">
+      <img src="my_photo.jpg" alt="Dr. Nitish Shukla" style="max-width: 200px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;"/>
+      <h3 style="color: #333;">Dr. Nitish Shukla, MBBS</h3>
+      <p style="font-size: 16px; color: #555;">
+        Dr. Nitish Shukla is a compassionate and experienced General Physician committed to providing quality healthcare to all. With a focus on preventive medicine and patient-centered care, he combines modern diagnostics with a personal approach to wellness.
+      </p>
+    </div>
+
+    <!-- Dr. Muskan Jain -->
+    <div style="max-width: 450px; text-align: center;" data-aos="fade-up" data-aos-delay="200">
+      <img src="Dr. Muskan.jpg" alt="Dr. Muskan Jain" style="max-width: 200px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;"/>
+      <h3 style="color: #333;">Dr. Muskan Jain</h3>
+      <p style="font-size: 16px; color: #555;">
+        Dr. Muskan Jain specializes in gynecology and women’s health. She is dedicated to addressing menstrual issues, pregnancy care, hormonal concerns, and overall reproductive wellness with empathy and expertise.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

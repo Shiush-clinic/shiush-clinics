@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News & Updates - SHIUSH Clinics</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9fbff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #007bff, #00bfff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    .news-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .news-box {
+      background-color: #e3f2fd;
+      border-left: 5px solid #007bff;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+    }
+
+    .news-box h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .news-box p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+  <header data-aos="fade-down">
+    <h1>News & Updates</h1>
+    <p>Stay informed about the latest happenings at SHIUSH Clinics</p>
+  </header>
+
+  <section class="news-container">
+
+    <div class="news-box" data-aos="fade-up">
+      <h3>🎉 Doctor's Day 2025 – Honoring Our Healers</h3>
+      <p>
+        On <strong>July 1st</strong>, SHIUSH Clinics proudly celebrates <strong>National Doctor’s Day</strong> to honor the dedication of our medical professionals.
+        Today, we salute the dedication, compassion, and tireless efforts of all the doctors who work selflessly to heal and give hope.
+
+At SHIUSH CLINICS, we are proud to be led by values that place patient care at the center of everything we do. This Doctor’s Day, we extend our heartfelt gratitude to every medical professional who continues to inspire through their service and sincerity.
+      </p>
+      <p>
+        On this special day, we remember the spirit of compassion, service, and healing that defines every doctor. Thank you for trusting us with your health.
+      </p>
+    </div>
+
+    <!-- You can add more future news posts here in the same format -->
+
+  </section>
+<!-- Doctor's Day Personalized Greeting with Logo and Download -->
+<section style="padding: 50px 20px; background: #fff3e0; text-align: center; font-family: 'Poppins', sans-serif;">
+  <h2 style="color: #ff6f00; font-size: 2rem;">✨ Send a Doctor’s Day Wish</h2>
+  <p style="font-size: 1.1rem; color: #555; max-width: 600px; margin: 0 auto 20px;">
+    Enter your name and receive a heartfelt greeting to celebrate Doctor’s Day ❤️
+  </p>
+
+  <input type="text" id="userName" placeholder="Enter your name..."
+         style="padding: 12px; width: 250px; max-width: 90%; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem;" />
+  <br><br>
+  <button onclick="showMessage()" style="padding: 12px 20px; background-color: #ff9800; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer;">
+    Show Message
+  </button>
+
+  <div id="messageBox" style="margin-top: 30px; display: none; animation: fadeIn 1s;">
+    <div id="captureArea" style="background: #fffde7; padding: 30px; border-radius: 12px; display: inline-block; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 20px; max-width: 400px;">
+      <img src="logo.png" alt="SHIUSH Clinics Logo" style="max-width: 120px; margin-bottom: 15px;" />
+      <h3 id="personalMessage" style="color: #d84315; font-size: 1.5rem;"></h3>
+      <p style="font-size: 1.1rem; color: #333;">Thank you for joining us in honoring the doctors who heal with their heart. 💖</p>
+      <p style="font-size: 0.9rem; color: #999;">SHIUSH CLINICS | July 1, 2025</p>
+    </div>
+    <br><br>
+    <button onclick="downloadGreeting()" style="padding: 10px 18px; background-color: #43a047; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer;">
+      📥 Download Greeting as Image
+    </button>
+  </div>
+</section>
+
+<!-- html2canvas CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- Script Logic -->
+<script>
+  function showMessage() {
+    const name = document.getElementById('userName').value.trim();
+    const message = document.getElementById('personalMessage');
+    const box = document.getElementById('messageBox');
+
+    if (name !== "") {
+      message.innerHTML = `🎉 Happy Doctor’s Day, <strong>${name}</strong>!`;
+      box.style.display = "block";
+    } else {
+      message.innerHTML = "";
+      box.style.display = "none";
+      alert("Please enter your name first.");
+    }
+  }
+
+  function downloadGreeting() {
+    const captureArea = document.getElementById("captureArea");
+    html2canvas(captureArea).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'Doctors_Day_Greeting.png';
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    });
+  }
+</script>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+<div class="news-box" data-aos="fade-up">
+  <h3>🌧️ Monsoon Fever Screening Camp – Free Checkup & Guidance</h3>
+  <p>
+    SHIUSH Clinics is organizing a <strong>Monsoon Fever Screening Camp</strong> to address the rising cases of viral infections, dengue, malaria, and typhoid during the rainy season.
+  </p>
+  <p>
+    🗓️ <strong>Date:</strong>15th to 21st July 2025<br/>
+    🕘 <strong>Time:</strong> 9:00 AM to 1:00 PM & 5:00 PM to 8:00 PM<br/>
+    📍 <strong>Location:</strong> SHIUSH Clinics, Link Road Camp 2, Bhilai
+  </p>
+  <p>
+    💉 <strong>Free Services:</strong><br/>
+    ✔️ Fever Evaluation<br/>
+    ✔️ Malaria & Dengue Card Tests<br/>
+    ✔️ CBC, TyphiDot Screening (Discounted)<br/>
+    ✔️ Doctor Consultation & Medication Advice
+  </p>
+  <p>
+    📞 <strong>Call to Book:</strong> 7646890193<br/>
+    🚑 Walk-in patients are welcome!
+  </p>
+</div>
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

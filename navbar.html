@@ -1,0 +1,88 @@
+<style>
+  .navbar-toggle {
+    background: none;
+    border: none;
+    color: #004080; /* Changed from white to dark blue */
+    font-size: 28px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-toggle:hover {
+    color: #007bff; /* Light blue on hover */
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #004080;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff5;
+  }
+
+  .menu-link:hover {
+    background-color: #0059b3;
+    border-radius: 5px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+
+<!-- Hamburger Icon -->
+<button class="navbar-toggle" onclick="document.getElementById('dropdownMenu').classList.toggle('show')">☰</button>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="dropdown-menu">
+  <a href="index.html" class="menu-link">Home</a>
+  <a href="news.html" class="menu-link">News & Updates</a>
+  <a href="disease.html" class="menu-link">Diseases</a>
+  <a href="contact.html" class="menu-link">Contact Us</a>
+  <a href="payment.html" class="menu-link">Payment Details</a>
+  <a href="success-story.html" class="menu-link">Patient Success Story</a>
+  <a href="appointment.html" class="menu-link">Book Appointment</a>
+  <a href="gallery.html" class="menu-link">Gallery</a>
+  <a href="services.html" class="menu-link">Our Services</a>
+  <a href="doctor.html" class="menu-link">Meet the Doctor</a>
+  <a href="lab-tests.html" class="menu-link">Lab Tests</a>
+  <a href="testimonials.html" class="menu-link">Testimonials</a>
+  <a href="calendar.html" class="menu-link">Health Calendar</a>
+  <a href="health-tips.html" class="menu-link">Health Tips</a>
+  <a href="https://maps.google.com/?q=Link+Road+Camp+2,+Bhilai,+Chhattisgarh" target="_blank" class="menu-link">Map & Directions</a>
+</div>
+
+<script>
+  // Close dropdown if clicked outside
+  window.onclick = function(e) {
+    if (!e.target.matches('.navbar-toggle')) {
+      const menu = document.getElementById("dropdownMenu");
+      if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+      }
+    }
+  };
+</script>

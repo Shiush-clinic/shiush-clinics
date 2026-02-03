@@ -1,0 +1,296 @@
+
+<!-- Animated Hamburger Menu Navigation with Home, Asthma, Diabetes -->
+<nav style="background-color: #004080; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
+  <div style="color: white; font-weight: bold; font-size: 1.2em;">SHIUSH CLINICS</div>
+
+  <!-- Hamburger Icon -->
+  <div id="menuToggle" onclick="toggleMenu()" style="cursor: pointer;">
+    <img src="https://img.icons8.com/material-outlined/30/ffffff/menu-2.png" alt="Menu" />
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdownMenu" class="dropdown-menu">
+    <a href="news.html" class="menu-link">News & Updates</a>
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="disease.html" class="menu-link">Diseases</a>
+    <a href="contact.html" class="menu-link">Contact Us</a>
+    <a href="payment.html" class="menu-link">Payment Details</a>
+    <a href="success-story.html" class="menu-link">Patient Success Story</a>
+    <a href="appointment.html" class="menu-link">Book Appointment</a>
+    <a href="gallery.html" class="menu-link">Gallery</a>
+    <a href="services.html" class="menu-link">Our Services</a>
+    <a href="doctor.html" class="menu-link">Meet the Doctor</a>
+    <a href="lab-tests.html" class="menu-link">Lab Tests</a>
+    <a href="testimonials.html" class="menu-link">Testimonials</a>
+    <a href="calendar.html" class="menu-link">Health Calendar</a>
+    <a href="https://maps.google.com/?q=Link+Road+Camp+2,+Bhilai,+Chhattisgarh" target="_blank" class="menu-link">Map & Directions</a>
+    <a href="health-tips.html" class="menu-link">Health Tips</a>
+  </div>
+</nav>
+
+<!-- Dropdown CSS -->
+<style>
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: slideDown 0.3s ease forwards;
+    z-index: 1000;
+    min-width: 230px;
+  }
+
+  .menu-link {
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #004080;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .menu-link:hover {
+    background-color: #f0f8ff;
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dropdown-menu {
+      right: 10px;
+      left: 10px;
+      width: auto;
+    }
+  }
+</style>
+
+<!-- Toggle Menu Script -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const menu = document.getElementById('dropdownMenu');
+    const toggle = document.getElementById('menuToggle');
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/>
+<meta content="QWUwnbSfHXqk8h_NA7lC7oc16CaZFaE2n9PdP8a1fnE" name="google-site-verification"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHIUSH CLINICS</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #007BFF, #00BFFF);
+      color: white;
+      padding: 3em 1em;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+    section {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #f8faff;
+      border-radius: 12px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+      color: #007BFF;
+    }
+    .appointment form input,
+    .appointment form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    .appointment form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.8em 1.5em;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .appointment form button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      background-color: #f1f1f1;
+      padding: 1.5em;
+      font-size: 0.9em;
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/></head>
+<body style="font-family: 'Poppins', sans-serif;">
+<header data-aos="fade-down">
+<img alt="Shiush Clinics Logo" src="logo.png" style="max-width: 180px; margin-bottom: 1em;"/>
+<h1>SHIUSH CLINICS</h1>
+<p>Health is the root of happiness</p>
+</header>
+<section>
+<div class="card" data-aos="fade-up">
+<h2>About the Clinic</h2>
+<p>Welcome to <strong>SHIUSH CLINICS</strong>. We are dedicated to providing compassionate and professional healthcare to our community. Led by Dr. Shukla (MBBS, General Physician), we offer consultations for a range of common and chronic conditions.</p>
+</div>
+<div class="card appointment" data-aos="fade-up" data-aos-delay="200">
+<div style="text-align:center;"><h2>Book an Appointment</h2></div>
+<form action="success.html" data-netlify="true" method="POST" name="appointment">
+<input name="form-name" type="hidden" value="appointment"/>
+<input name="Name" placeholder="Your Name" required="" type="text"/>
+<input name="Phone" placeholder="Phone Number" required="" type="tel"/>
+<input name="Email" placeholder="Email (optional)" type="email"/>
+<input name="Preferred Date" required="" type="date"/>
+<textarea name="Symptoms" placeholder="Brief description of symptoms" required=""></textarea>
+<button type="submit">Book Appointment</button>
+</form>
+</div>
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> 8305194236</p>
+<p><strong>Email:</strong> shuklanitish762@gmail.com</p>
+<p><strong>Address:</strong> Link Road Camp 2, Bhilai, Chhattisgarh</p>
+</div>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<details>
+<summary><strong>What are your consultation timings?</strong></summary>
+<p>Monday to Saturday, 10 AM – 7 PM</p>
+</details>
+<details>
+<summary><strong>How much is the fee for online messaging and video consultation?</strong></summary>
+<p>Rs. 100/- for messaging and Rs. 300/- video consultation</p>
+</details>
+<details>
+<summary><strong>Do I need to bring any documents?</strong></summary>
+<p>Bring previous prescriptions and any recent reports if available.</p>
+</details>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<section id="doctor-profile" style="padding: 40px; background-color: #eef7ff; font-family: Arial, sans-serif;">
+<h2 style="text-align: center; color: #1a73e8;">Meet the Doctor</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 30px;">
+<div style="margin: 20px; text-align: center;">
+<img alt="Dr. Nitish Shukla" src="my_photo.jpg" style="max-width: 200px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"/>
+</div>
+<div style="margin: 20px; max-width: 500px;">
+<h3 style="color: #333;">Dr. Nitish Shukla, MBBS</h3>
+<p style="font-size: 16px; color: #555;">
+        Dr. Nitish Shukla is a compassionate and experienced General Physician committed to providing quality healthcare to all. With a focus on preventive medicine and patient-centered care, he combines modern diagnostics with a personal approach to wellness. Whether you're visiting for a routine consultation or health advice, Dr. Shukla ensures thorough and respectful treatment.
+      </p>
+</div>
+</div>
+</section>
+<!-- Patient Treatment Section -->
+<section id="patient-treatment" style="padding: 4rem 2rem; background-color: #f7f9fc; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #333;">OUR WARRIOR</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; align-items: center;">
+    <div style="flex: 1; max-width: 300px; text-align: center; animation: fadeIn 2s;">
+      <h3 style="margin-bottom: 1rem;">Before Treatment</h3>
+      <img src="ayush_before.jpg" alt="Ayush Before Treatment" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </div>
+    <div style="flex: 1; max-width: 300px; text-align: center; animation: fadeIn 2s 0.5s;">
+      <h3 style="margin-bottom: 1rem;">After Treatment</h3>
+      <img src="ayush_after.jpg" alt="Ayush After Treatment" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+  <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem; color: #555; max-width: 800px; margin-left: auto; margin-right: auto;">
+    Ayush, a 7-year-old boy, came to SHIUSH Clinics as a burn victim. Through expert care and compassionate treatment, he has made a remarkable recovery. His story is a true testament to the healing power of modern medicine and personalized care.
+  </p>
+</section>
+
+<style>
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+<!-- News Update Section -->
+<section style="background:#eef7ff; padding:20px 0; border-bottom:1px solid #ccc;">
+  <div style="max-width:960px; margin:auto; text-align:center;">
+    <h2 style="color:#004080; margin-bottom:10px;">Latest News & Updates</h2>
+    <p style="font-size:18px; color:#333;">
+      🩺 <strong>Tomorrow:</strong> Free Medical Checkup Camp at SHIUSH Clinic!  
+      <br>
+      💉 <strong>50% Discount</strong> on all lab tests during the camp.
+    </p>
+    <p style="margin-top:10px; color:#555;">
+      Visit us at Link Road Camp 2, Bhilai | Call: 7646890193
+    </p>
+  </div>
+</section>
+<section id="feedback" style="padding: 40px; background-color: #eef7f4; font-family: Arial, sans-serif;">
+<h2 style="text-align: center; color: #333;">Patient Feedback</h2>
+<form action="https://formsubmit.co/shuklanitish762@gmail.com" method="POST" style="max-width: 600px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+<input name="_next" type="hidden" value="https://shiush-clinics.netlify.app/success.html">
+<input name="_captcha" type="hidden" value="false">
+<input name="name" placeholder="Your Name" required="" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;" type="text">
+<textarea name="feedback" placeholder="Write your feedback..." required="" style="width: 100%; padding: 12px; margin: 10px 0; height: 100px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+<button style="padding: 12px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;" type="submit">Send Feedback</button>
+</input></input></input></form>
+</section>
+<a href="https://wa.me/918305194236" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;" target="_blank">
+<img alt="Chat on WhatsApp" src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" style="width:60px; height:60px;"/>
+</a>
+
+<footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Registration - SHIUSH Clinics</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    /* Navbar Styling */
+    nav {
+      background: #004080;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Form Section */
+    section {
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #004080;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #003366;
+    }
+
+    /* Thank You Message */
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      background: #eef7ff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    #thankYouMessage h3 {
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="asthma.html">Asthma</a>
+    <a href="diabetes.html">Diabetes</a>
+    <a href="hypertension.html">Hypertension</a>
+    <a href="register.html">Register for Camp</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Patient Registration Form -->
+  <section>
+    <div class="container">
+      <h2>Patient Registration</h2>
+      <p>Enter your details to register for our free checkup camp.</p>
+      
+      <form id="patientForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter patient's full name" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+        
+        <label for="issue">Health Concern</label>
+        <textarea id="issue" name="issue" placeholder="Describe symptoms or concern" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Thank You Message -->
+      <div id="thankYouMessage">
+        <h3>Thank you for registering!</h3>
+        <p>We have received your details. A confirmation message has been sent to your phone.</p>
+        <p><strong>Treatment Advice:</strong> Please visit our free camp tomorrow for a full consultation and checkup.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Section -->
+  <script>
+    document.getElementById('patientForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Hide the form
+      document.getElementById('patientForm').style.display = 'none';
+
+      // Show the thank you message
+      document.getElementById('thankYouMessage').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

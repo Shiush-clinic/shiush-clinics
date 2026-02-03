@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pregnancy Care – SHIUSH Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fffafc; color: #333; }
+    nav { background-color: #004080; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 0 20px #ccc;
+    }
+    h1, h2 { color: #cc3366; }
+    .highlight {
+      background: #ffeef2;
+      padding: 15px;
+      border-left: 5px solid #cc3366;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    ul { padding-left: 20px; }
+    .box-section {
+      margin-top: 40px;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-button a {
+      background:#cc3366;
+      color:white;
+      padding:12px 25px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+    <div class="container" data-aos="fade-up">
+    <h1>Pregnancy Care at SHIUSH Clinic</h1>
+    <div class="highlight">
+      Our clinic offers comprehensive <strong>Antenatal Care (ANC)</strong> ensuring the well-being of both mother and baby. Early and regular visits help detect and prevent complications.
+    </div><div class="box-section" data-aos="fade-right">
+  <h2>First Visit Includes</h2>
+  <ul>
+    <li>Complete history taking</li>
+    <li>General physical & systemic examination</li>
+    <li>Baseline investigations (Hb, Blood Group, HIV, HBsAg, VDRL, Urine R/M)</li>
+    <li>Early obstetric ultrasound</li>
+    <li>Iron, calcium and folic acid supplements initiation</li>
+  </ul>
+</div>
+
+<div class="box-section" data-aos="fade-left">
+  <h2>Subsequent ANC Visits</h2>
+  <ul>
+    <li>Weight, BP, fetal growth monitoring</li>
+    <li>Second trimester ultrasound (Anomaly Scan)</li>
+    <li>Tetanus toxoid immunizations</li>
+    <li>Diabetes screening (GTT), Hemoglobin monitoring</li>
+    <li>Counseling on danger signs, diet & hygiene</li>
+  </ul>
+</div>
+
+<div class="box-section" data-aos="fade-up">
+  <h2>Important Tips for Pregnant Women</h2>
+  <ul>
+    <li>Eat a balanced, iron-rich diet</li>
+    <li>Stay hydrated and well-rested</li>
+    <li>Avoid self-medication</li>
+    <li>Report any bleeding, swelling, or decreased fetal movement immediately</li>
+  </ul>
+</div>
+
+<div class="box-section" data-aos="fade-right">
+  <h2>Pregnancy Education Video</h2>
+  <iframe src="https://www.youtube.com/embed/PLACEHOLDER_LINK" title="Pregnancy Awareness"></iframe>
+</div>
+
+<div class="box-section" data-aos="fade-up">
+  <h2>Downloadable Guide</h2>
+  <p>Click below to download your personalized <strong>ANC Health Card</strong>:</p>
+  <a href="anc-health-card.pdf" download style="color:#cc3366; font-weight:bold;">📄 Download ANC Health Card (PDF)</a>
+</div>
+
+<div class="box-section" data-aos="fade-left">
+  <h2>Patient Experiences</h2>
+  <p><strong>Ritika D.:</strong> "I received excellent care during all my trimesters. Very friendly and informative doctor."
+  <br/><strong>Kavita S.:</strong> "Their structured ANC card helped track all visits and tests perfectly."
+  </p>
+</div>
+
+<div class="cta-button">
+  <a href="appointment.html">Book Pregnancy Consultation</a>
+</div>
+
+  </div>  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  <script>
+    AOS.init();
+  </script></body>
+</html>

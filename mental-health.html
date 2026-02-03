@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mental Health – Shiush Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f3f7fa; margin: 0; }
+    nav { background-color:#004080; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 20px; text-decoration:none; font-weight:bold; }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 20px #ccc;
+    }
+    h1 { color: #003366; margin-bottom: 10px; }
+    h2 { color: #005580; margin-top: 30px; }
+    ul { padding-left: 20px; }
+    .highlight {
+      background: #e0f7fa;
+      padding: 10px 15px;
+      border-left: 4px solid #00acc1;
+      border-radius: 5px;
+    }
+    .advice-box {
+      background: #e1f5fe;
+      border-left: 5px solid #0288d1;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .advice-box img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-button a {
+      background:#005580;
+      color:white;
+      padding:12px 25px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+    <div class="container" data-aos="fade-up">
+    <h1>Mental Health Matters at Shiush Clinic</h1>
+    <div class="highlight">
+      Mental health includes emotional, psychological, and social well-being. It affects how we think, feel, and act, and it is just as important as physical health.
+    </div><div class="section" data-aos="fade-right">
+  <h2>Common Mental Health Issues We Address</h2>
+  <ul>
+    <li>Anxiety Disorders</li>
+    <li>Depression & Mood Swings</li>
+    <li>Insomnia & Sleep Disorders</li>
+    <li>Postpartum Depression</li>
+    <li>Stress & Burnout</li>
+    <li>Teenage Emotional Issues</li>
+  </ul>
+</div>
+
+<div class="section" data-aos="fade-left">
+  <h2>Services We Provide</h2>
+  <ul>
+    <li>Confidential Counselling Sessions</li>
+    <li>Stress & Anger Management Techniques</li>
+    <li>Behavioral Therapy for Children/Teens</li>
+    <li>Medication & Follow-up (if required)</li>
+    <li>Referral to Psychiatrists when needed</li>
+  </ul>
+</div>
+
+<div class="section" data-aos="fade-up">
+  <h2>When to Seek Help</h2>
+  <ul>
+    <li>Constant sadness or irritability</li>
+    <li>Fear, worry, or panic attacks</li>
+    <li>Changes in eating or sleeping habits</li>
+    <li>Withdrawal from social interaction</li>
+    <li>Thoughts of self-harm or hopelessness</li>
+  </ul>
+</div>
+
+<div class="section" data-aos="fade-up">
+  <h2>Learn More</h2>
+  <iframe src="https://www.youtube.com/embed/your-mentalhealth-video" title="Mental Health Awareness"></iframe>
+</div>
+
+<div class="section" data-aos="fade-up">
+  <h2>Download Our Mental Health Guide</h2>
+  <p>Get tips for managing emotional well-being in your daily life:</p>
+  <a href="mental-health-guide.pdf" download style="color:#0077b6; font-weight:bold;">📄 Download Mental Health Guide</a>
+</div>
+
+<div class="advice-box" data-aos="fade-up">
+  <img src="my_photo.jpg" alt="Dr. Nitish Shukla">
+  <blockquote>
+    <p><em>"It’s okay to not feel okay sometimes. Mental health is health. Don’t suffer in silence — we are here to help."</em></p>
+    <strong>– Dr. Nitish Shukla</strong>
+  </blockquote>
+</div>
+
+<div class="cta-button">
+  <a href="appointment.html">Book A Confidential Session</a>
+</div>
+
+  </div>  <a href="https://wa.me/918305194236" target="_blank" style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat with us on WhatsApp" style="width:50px; height:50px;">
+  </a>  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  <script>
+    AOS.init();
+  </script></body>
+</html>

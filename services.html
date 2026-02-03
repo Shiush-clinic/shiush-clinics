@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - SHIUSH Clinics</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+    .services-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #e6f7ff, #ffffff);
+    }
+    .services-section h2 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #007bff;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    .service-card h3 {
+      display: flex;
+      align-items: center;
+      color: #007bff;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    .service-card h3 i {
+      margin-right: 10px;
+      font-size: 1.4rem;
+    }
+    .service-card ul {
+      padding-left: 20px;
+      color: #555;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <section class="services-section" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <h3><i class="fas fa-video"></i>Video &amp; Audio Consultations</h3>
+        <ul>
+          <li>Diagnose common ailments (cold, flu, skin rashes, etc.)</li>
+          <li>Follow-up for chronic conditions (diabetes, hypertension)</li>
+          <li>Second opinions and general health queries</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <h3><i class="fas fa-prescription-bottle-alt"></i>Prescription Services</h3>
+        <ul>
+          <li>E-prescriptions via WhatsApp, email, or SMS</li>
+          <li>Prescription refills for ongoing treatments</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <h3><i class="fas fa-vials"></i>Diagnostic Test Recommendations</h3>
+        <ul>
+          <li>Suggest lab &amp; imaging tests</li>
+          <li>Home sample collection partnerships</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <h3><i class="fas fa-heartbeat"></i>Health Advice &amp; Counseling</h3>
+        <ul>
+          <li>Lifestyle guidance (diet, exercise, mental health)</li>
+          <li>Preventive care advice (vaccinations, screenings)</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <h3><i class="fas fa-stethoscope"></i>Follow-Up Care</h3>
+        <ul>
+          <li>Post-treatment reviews (surgery, acute illness)</li>
+          <li>Medication adjustments</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+        <h3><i class="fas fa-file-medical"></i>Digital Reports &amp; Health Records</h3>
+        <ul>
+          <li>Secure sharing of reports &amp; data</li>
+          <li>Help patients organize and understand results</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+        <h3><i class="fas fa-hospital-user"></i>Referral Services</h3>
+        <ul>
+          <li>Referral to specialists or hospitals</li>
+          <li>Guidance on advanced care pathways</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+        <h3><i class="fas fa-calendar-check"></i>Appointment Booking</h3>
+        <ul>
+          <li>Schedule in-person visits</li>
+          <li>Reschedule or cancel via WhatsApp or site</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="900">
+        <h3><i class="fas fa-medkit"></i>Health Packages &amp; Memberships</h3>
+        <ul>
+          <li>Subscription-based care (monthly diabetic checkups)</li>
+          <li>Discounts on tests, follow-ups, or annual checks</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

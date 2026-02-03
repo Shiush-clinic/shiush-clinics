@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Tips - SHIUSH Clinics</title>
+
+  <!-- Fonts & AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fdfd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .tips-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #e6f7ff, #ffffff);
+    }
+
+    .tips-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 40px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .tip-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .tip-card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .tip-card p {
+      font-size: 0.98rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+<section class="tips-section" data-aos="fade-up">
+  <h2>Health Tips by SHIUSH Clinics</h2>
+
+  <div class="tips-grid">
+
+    <div class="tip-card" data-aos="fade-up">
+      <h3><i class="fas fa-apple-alt"></i> Balanced Diet</h3>
+      <p>Eat fresh fruits, vegetables, whole grains, and lean proteins. Avoid fried, overly salty, and packaged foods. Aim for home-cooked meals as often as possible.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="100">
+      <h3><i class="fas fa-tint"></i> Stay Hydrated</h3>
+      <p>Drink at least 2–3 liters of water every day. Staying hydrated helps in digestion, improves skin, and supports overall health.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="200">
+      <h3><i class="fas fa-bed"></i> Adequate Sleep</h3>
+      <p>Adults should sleep for 7–8 hours every night. A regular sleep routine boosts immunity, concentration, and emotional health.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="300">
+      <h3><i class="fas fa-running"></i> Regular Exercise</h3>
+      <p>Engage in at least 30 minutes of moderate activity like walking, yoga, or cycling five days a week. It keeps your heart, lungs, and muscles strong.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="400">
+      <h3><i class="fas fa-syringe"></i> Diabetes Control</h3>
+      <p>Monitor your blood sugar, eat low-glycemic foods, and take medications as prescribed. Regular checkups are key to preventing complications.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="500">
+      <h3><i class="fas fa-heartbeat"></i> Hypertension Care</h3>
+      <p>Reduce salt intake, manage stress, take medications regularly, and monitor blood pressure. Avoid smoking and alcohol for long-term control.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="600">
+      <h3><i class="fas fa-virus-slash"></i> Prevent Infections</h3>
+      <p>Practice hand hygiene, wear masks in crowded places, and keep your vaccinations up to date—especially for children and seniors.</p>
+    </div>
+
+    <div class="tip-card" data-aos="fade-up" data-aos-delay="700">
+      <h3><i class="fas fa-smile-beam"></i> Mental Wellness</h3>
+      <p>Take breaks, stay socially connected, and do activities you love. Seek help if feeling anxious or depressed—mental health is just as important.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 SHIUSH CLINICS. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

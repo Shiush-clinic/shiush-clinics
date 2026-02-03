@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Details - SHIUSH Clinics</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .payment-section {
+      background: linear-gradient(to right, #f0f8ff, #ffffff);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .payment-section h2 {
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .payment-section p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .qr-container {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .qr-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+      max-width: 300px;
+    }
+
+    .qr-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .qr-card p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <!-- Payment Section -->
+  <section class="payment-section" data-aos="fade-up">
+    <h2>Consultation Payment Details</h2>
+    <p>For online consultations, please pay ₹100 using the UPI QR code or UPI ID below.</p>
+
+    <div class="qr-container">
+      <div class="qr-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="my_qr.jpg" alt="QR Code" />
+        <p><strong>UPI ID:</strong> <span style="color: #007bff;">7646890193@ybl</span></p>
+        <p style="font-size: 14px; color: #666;">Scan using PhonePe, Google Pay, or any UPI app</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

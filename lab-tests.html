@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Test Services – SHIUSH Clinics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f7fcff; color: #333; }
+    header {
+      background: linear-gradient(to right, #0066cc, #00bfff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .lab-box {
+      background: #e6f2ff;
+      padding: 25px;
+      border-left: 5px solid #007bff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 { color: #007bff; }
+    ul { padding-left: 20px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .cta a {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+  <header data-aos="fade-down">
+    <h1>Lab Test Services</h1>
+    <p>In collaboration with <strong>Redcliffe Pathology</strong></p>
+  </header>
+
+  <div class="container">
+
+    <div class="lab-box" data-aos="fade-up">
+      <h2>Why Choose Us?</h2>
+      <p>We’ve partnered with <strong>Redcliffe Pathology</strong> to bring you accurate, timely, and affordable lab tests right from the comfort of SHIUSH Clinics.</p>
+    </div>
+
+    <div class="lab-box" data-aos="fade-up" data-aos-delay="100">
+      <h2>Tests Offered</h2>
+      <ul>
+        <li>🩸 Complete Blood Count (CBC)</li>
+        <li>💉 Blood Sugar (FBS/PP/HbA1c)</li>
+        <li>🧬 Thyroid Function Tests (T3, T4, TSH)</li>
+        <li>🧫 Urine Routine & Culture</li>
+        <li>🧪 Liver & Kidney Function Tests</li>
+        <li>🩺 Lipid Profile, Vitamin D & B12</li>
+        <li>🧾 COVID, Dengue, Typhoid, Malaria panels</li>
+      </ul>
+    </div>
+
+    <div class="lab-box" data-aos="fade-up" data-aos-delay="200">
+      <h2>Sample Collection</h2>
+      <p>
+        ✅ On-site blood & urine collection<br>
+        ✅ Home sample collection available on request<br>
+        ✅ Reports delivered digitally via WhatsApp or email
+      </p>
+    </div>
+
+    <div class="lab-box" data-aos="fade-up" data-aos-delay="300">
+      <h2>Contact for Booking</h2>
+      <p>📞 <strong>Call / WhatsApp:</strong> <a href="tel:+918899901474" style="color:#007bff;">8899901474</a></p>
+      <p>🕒 <strong>Timing:</strong> Monday to Saturday, 8 AM – 6 PM</p>
+    </div>
+
+    <div class="cta" data-aos="zoom-in">
+      <a href="appointment.html">Book a Consultation + Test</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 SHIUSH CLINICS | Partnered with Redcliffe Pathology
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Success Story - SHIUSH Clinics</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .story-section {
+      background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
+      padding: 60px 20px;
+    }
+
+    .story-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 40px;
+    }
+
+    .patient-story {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .story-images img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .story-text {
+      max-width: 600px;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <!-- Success Story Section -->
+  <section class="story-section" data-aos="fade-up">
+    <h2>Patient Success Stories</h2>
+
+    <!-- Ayush's Story -->
+    <div class="patient-story" data-aos="fade-up" data-aos-delay="100">
+      <div class="story-images">
+        <h3 style="text-align:center;">Ayush</h3>
+        <img src="ayush_before.jpg" alt="Ayush Before Treatment" style="margin-bottom: 20px;">
+        <img src="ayush_after.jpg" alt="Ayush After Treatment">
+      </div>
+      <div class="story-text">
+        <p><strong>Ayush</strong>, a 7-year-old boy, came to SHIUSH Clinics as a burn victim. Through expert care and compassionate treatment, he has made a remarkable recovery. His story is a true testament to the healing power of modern medicine and personalized care.</p>
+      </div>
+    </div>
+
+    <!-- Devi's Story -->
+    <div class="patient-story" data-aos="fade-up" data-aos-delay="200">
+      <div class="story-images">
+        <h3 style="text-align:center;">Devi</h3>
+        <img src="Devi_before.jpg" alt="Devi Before Treatment" style="margin-bottom: 20px;">
+        <img src="Devi_after.jpg" alt="Devi After Treatment">
+      </div>
+      <div class="story-text">
+        <p><strong>Devi</strong>, a 45-year-old woman, visited SHIUSH Clinics with pain, swelling, and discoloration in her finger due to a rat bite. Over a few days, the wound developed into a subungual abscess. With timely diagnosis and proper treatment, she recovered completely, regaining full use of her finger and expressing heartfelt gratitude.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

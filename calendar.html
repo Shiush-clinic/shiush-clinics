@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Calendar – SHIUSH Clinics</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4faff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #007BFF, #00BFFF);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .calendar-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .month-box {
+      background: #e3f2fd;
+      border-left: 6px solid #007BFF;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .month-box:hover {
+      transform: translateY(-5px);
+    }
+    .month-box h3 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  </script>
+  <header data-aos="fade-down">
+    <h1>SHIUSH Health Calendar</h1>
+    <p>Important awareness days and health checkups throughout the year</p>
+  </header>  <section class="calendar-section">
+    <div class="month-box" data-aos="fade-up">
+      <h3>January</h3>
+      <ul>
+        <li>New Year Health Checkup</li>
+        <li>Thyroid Awareness Month</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>February</h3>
+      <ul>
+        <li>World Cancer Day – 4th Feb</li>
+        <li>Heart Health Awareness</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>March</h3>
+      <ul>
+        <li>International Women’s Day – 8th Mar</li>
+        <li>Nutrition Week</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>April</h3>
+      <ul>
+        <li>World Health Day – 7th Apr</li>
+        <li>Immunization Awareness</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>May</h3>
+      <ul>
+        <li>World Hypertension Day – 17th May</li>
+        <li>Mother’s Health Checkup Camps</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>June</h3>
+      <ul>
+        <li>International Yoga Day – 21st Jun</li>
+        <li>Eye Checkup Month</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>July</h3>
+      <ul>
+        <li>National Doctor’s Day – 1st Jul</li>
+        <li>Monsoon Fever Screening Camp</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>August</h3>
+      <ul>
+        <li>Breastfeeding Awareness Week</li>
+        <li>Dengue & Malaria Awareness</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>September</h3>
+      <ul>
+        <li>Heart Day – 29th Sep</li>
+        <li>Diabetes & Obesity Risk Checkup</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>October</h3>
+      <ul>
+        <li>Breast Cancer Awareness Month</li>
+        <li>Mental Health Day – 10th Oct</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>November</h3>
+      <ul>
+        <li>World Diabetes Day – 14th Nov</li>
+        <li>Free Sugar Check Camp</li>
+      </ul>
+    </div>
+    <div class="month-box" data-aos="fade-up">
+      <h3>December</h3>
+      <ul>
+        <li>AIDS Awareness Day – 1st Dec</li>
+        <li>Winter Wellness Tips</li>
+      </ul>
+    </div>
+  </section>  <footer>
+    © 2025 SHIUSH CLINICS. All rights reserved.
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  <script>AOS.init();</script></body>
+</html>

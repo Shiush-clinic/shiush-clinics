@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PCOD Management – SHIUSH Clinics</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #fffefc; margin: 0; padding: 0; }
+    nav { background-color: #004080; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 960px; margin: auto; padding: 30px; background: #ffffff; box-shadow: 0 0 20px #ddd; }
+    h1, h2 { color: #cc0066; }
+    .highlight { background: #fff0f5; padding: 15px; border-left: 5px solid #ff66b2; border-radius: 6px; margin-bottom: 20px; }
+    ul { padding-left: 20px; line-height: 1.6; }
+    iframe { width: 100%; height: 315px; border-radius: 10px; margin-top: 20px; }
+    .calendar-method { background: #fff9e6; border-left: 5px solid #f7c948; padding: 15px; border-radius: 10px; margin-top: 20px; }
+    .download-guide a { color: #cc0066; font-weight: bold; text-decoration: none; }
+    .testimonial { background: #fceef2; border-left: 5px solid #ff80aa; padding: 15px; border-radius: 10px; margin-top: 20px; }
+    .doctor-note { background: #e6f7ff; padding: 20px; border-left: 5px solid #007bff; margin-top: 40px; border-radius: 10px; display: flex; align-items: center; gap: 15px; }
+    .doctor-note img { width: 80px; height: 80px; border-radius: 50%; }
+    .cta-button { text-align: center; margin-top: 40px; }
+    .cta-button a { background: #cc0066; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="asthma.html">Asthma</a>
+    <a href="diabetes.html">Diabetes</a>
+    <a href="pcod.html">PCOD</a>
+  </nav>
+
+  <div class="container" data-aos="fade-up">
+    <h1>Managing PCOD with Care</h1>
+    <img src="gallery2.jpg" alt="PCOD Awareness" style="width:100%; border-radius:10px; margin-bottom:20px;">
+
+    <div class="highlight">
+      <strong>PCOD (Polycystic Ovarian Disease)</strong> is a hormonal disorder affecting 1 in 10 women. Early care, healthy habits, and correct guidance can help women lead a normal and fertile life.
+    </div>
+
+    <h2 data-aos="fade-right">⚠️ Common Symptoms</h2>
+    <ul>
+      <li>Irregular periods or no periods at all</li>
+      <li>Weight gain and acne</li>
+      <li>Facial hair growth (hirsutism)</li>
+      <li>Hair thinning</li>
+      <li>Difficulty getting pregnant</li>
+    </ul>
+
+    <h2 data-aos="fade-left">🩺 How PCOD Affects Fertility</h2>
+    <p>PCOD affects ovulation — the monthly release of eggs from ovaries. Women may have delayed, irregular, or no ovulation, making conception difficult without tracking cycles or hormonal help.</p>
+
+    <div class="calendar-method" data-aos="fade-up">
+      <h2>📆 Calendar Method to Conceive Naturally</h2>
+      <p>For women with relatively regular cycles:</p>
+      <ul>
+        <li>Track periods for 3 months.</li>
+        <li>Ovulation likely happens around <strong>Day 12 to Day 16</strong> in a 28-day cycle.</li>
+        <li>Have intercourse from Day 10–18 on alternate days.</li>
+        <li>Use ovulation kits or monitor cervical mucus (clear, stretchy = fertile).</li>
+      </ul>
+    </div>
+
+    <h2 data-aos="fade-left">🥗 Diet & Lifestyle for PCOD</h2>
+    <ul>
+      <li>Low-sugar, high-fiber diet with fresh veggies and whole grains</li>
+      <li>Reduce refined carbs and sugary foods</li>
+      <li>Exercise 30–45 minutes, at least 5 days/week</li>
+      <li>De-stress via yoga or meditation</li>
+      <li>Sleep 7–8 hours regularly</li>
+    </ul>
+
+    <h2 data-aos="fade-up">🎥 Video Guide</h2>
+    <iframe src="https://www.youtube.com/embed/pcod_sample_link" title="PCOD Management at SHIUSH Clinics"></iframe>
+
+    <div class="download-guide" style="margin-top:30px;">
+      <p><strong>📄 Downloadable PCOD Management Guide:</strong></p>
+      <a href="pcod-guide.pdf" download>📥 Download PCOD Guide (PDF)</a>
+    </div>
+
+    <div class="testimonial" data-aos="fade-up">
+      <p><strong>Kirti:</strong> “I conceived naturally after following Dr. Muskan’s advice on cycle tracking. Thank you!”</p>
+    </div>
+    <div class="testimonial">
+      <p><strong>Ayush's wife:</strong> “From hairfall to regular periods, my recovery feels like a miracle.”</p>
+    </div>
+
+    <div class="doctor-note" data-aos="fade-up">
+      <img src="my_photo.jpg" alt="Dr. Nitish">
+      <div>
+        <p><em>"I’ve seen many women lose hope with PCOD. With the right steps, natural pregnancy is very much possible."</em></p>
+        <strong>– Dr. Nitish</strong>
+      </div>
+    </div>
+
+    <div class="cta-button">
+      <a href="appointment.html">Book a Consultation</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
